@@ -11,3 +11,151 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+nav{
+  display: flex;
+  position: sticky;
+  align-items: center;
+  justify-content: space-around;
+  background-color: lightpink;
+  padding: 9px;
+  top: 0; /* Position the navigation at the top of the viewport */
+}
+nav input{
+  width: 250px;
+  text-decoration: none;
+  padding: 9px;
+  font-size: 18px;
+  border: none;
+}
+.searchBar{
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+nav button{
+  width: 70px;
+  height: 38px;
+  background-color: black;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+nav ul{
+  display: flex;
+  gap: 11px;
+
+}
+.cardContainer{
+  display: flex;
+  justify-content: center;
+  gap:41px;
+  flex-wrap: wrap;
+  background-color: black;
+
+}
+
+.card{
+  width: 320px;
+  box-shadow: 0px 4px 4px 4px rgb(255, 255, 255);
+  background-color: white;
+  border-radius: 3px;
+  margin-top: 21px;
+  border: 1px solid rgb(236, 236, 236);
+}
+.card img{
+  width: 100%;
+  height: 180px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+
+}
+.card .title{
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: -7px;
+}
+.card .title:hover{
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+.card .content{
+  padding: 9px;
+}
+.card button{
+  background-color: rgb(103, 29, 214);
+  border: none;
+  cursor: pointer;
+  width: 80px;
+  height: 28px;
+  color: white;
+  font-size: 13px;
+  border-radius: 2px;
+}
+.categoryBtn{
+  display: flex;
+  justify-content: center;
+  gap: 11px;
+  background-color: black;
+}
+.categoryBtn button{
+  gap: 11px;
+  width: 130px;
+  height: 33px;
+  background-color: rgb(255, 108, 108);
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 16px;
+  color: white;
+  cursor: pointer;
+  padding: 2px;
+}
+
+
+.head{
+  text-align: center;
+  font-weight: 600;
+  font-size: 26px;
+  background-color: black;
+  color: white;
+}
+.hero{
+  background-color: black;
+}
+.page{
+  background-color: black;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  gap: 10px; /* Use gap for both row and column gaps */
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust styles for mobile screens */
+  nav {
+    flex-direction: column;
+    align-items: center;
+    align-content: center; /* Change back to row for mobile */
+  }
+
+  .cardContainer {
+    flex-direction: column; /* Change back to row for mobile */
+  }
+  .categoryBtn button{
+    overflow: hidden;
+    font-size: 12px;
+  }
+}
+
+.head {
+  text-align: center;
+  font-weight: 600;
+  font-size: 26px;
+  flex-direction: column;
+}
+
